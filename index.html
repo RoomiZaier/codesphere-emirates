@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="CodeSphere Emirates connects aspiring developers and tech jobseekers across the UAE through practical guidance, peer learning, collaboration, and community projects.">
+  <meta name="theme-color" content="#07172e">
+  <title>CodeSphere Emirates | Together, We Code. Together, We Grow.</title>
+  <style>
+    :root{--navy:#07172e;--navy2:#0b2344;--cyan:#48d8e8;--mint:#a3f4d5;--white:#f6fbff;--muted:#b6c6d9;--line:rgba(255,255,255,.13)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:var(--navy);color:var(--white);line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}.nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0;gap:20px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.2px}.logo{width:42px;height:42px;border-radius:13px;background:linear-gradient(135deg,var(--cyan),var(--mint));color:var(--navy);display:grid;place-items:center;font-size:20px;font-weight:900}
+    .navlinks{display:flex;gap:24px;color:var(--muted);font-size:14px}.navlinks a:hover{color:var(--cyan)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 19px;border-radius:12px;background:var(--cyan);color:#04162a;font-weight:800;border:1px solid transparent;transition:.2s}
+    .btn:hover{transform:translateY(-2px);filter:brightness(1.06)}.btn.secondary{background:transparent;border-color:var(--line);color:var(--white)}
+    .hero{position:relative;overflow:hidden;padding:76px 0 82px;background:radial-gradient(ellipse at 85% 22%,rgba(72,216,232,.18),transparent 35%),linear-gradient(145deg,#07172e,#0a2040 65%,#0b2b48)}
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:54px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(72,216,232,.35);border-radius:99px;padding:7px 12px;color:var(--mint);font-size:12px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase}
+    h1{font-size:clamp(42px,6vw,72px);line-height:1.04;letter-spacing:-2.5px;margin:22px 0}.gradient{background:linear-gradient(90deg,var(--cyan),var(--mint));-webkit-background-clip:text;background-clip:text;color:transparent}
+    .lead{font-size:18px;color:var(--muted);max-width:610px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.micro{font-size:13px;color:#8fa7c1;margin-top:18px}
+    .visual{min-height:355px;position:relative;display:grid;place-items:center}.orb{width:min(320px,75vw);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 32% 28%,#c1fff0 0,#48d8e8 18%,#12628a 48%,#0a2040 72%);box-shadow:0 0 90px rgba(72,216,232,.18);display:grid;place-items:center;position:relative}
+    .orb:before,.orb:after{content:"";position:absolute;border:1px solid rgba(163,244,213,.4);border-radius:50%;inset:-24px;transform:rotate(-25deg) scaleY(.38)}.orb:after{inset:-48px;transform:rotate(38deg) scaleY(.35);border-color:rgba(72,216,232,.4)}
+    .code-mark{font-size:72px;color:#06192c;font-weight:900;letter-spacing:-8px;text-shadow:0 2px 0 rgba(255,255,255,.2)}.float-card{position:absolute;padding:13px 16px;border:1px solid var(--line);border-radius:14px;background:rgba(7,23,46,.84);backdrop-filter:blur(10px);box-shadow:0 15px 35px #03101e55;font-size:13px;color:var(--muted)}
+    .float-card strong{display:block;color:var(--white);font-size:15px}.fc1{top:28px;right:0}.fc2{bottom:28px;left:0}
+    section{padding:76px 0}.section-tag{color:var(--cyan);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:1.6px}.section-title{font-size:clamp(30px,4vw,45px);line-height:1.13;letter-spacing:-1.2px;margin:10px 0 16px}.section-copy{color:var(--muted);max-width:680px}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:17px;margin-top:34px}.card{background:linear-gradient(160deg,rgba(255,255,255,.065),rgba(255,255,255,.025));border:1px solid var(--line);border-radius:18px;padding:24px}.card-icon{width:46px;height:46px;border-radius:13px;background:rgba(72,216,232,.13);display:grid;place-items:center;font-size:23px;margin-bottom:18px}.card h3{margin:0 0 8px;font-size:19px}.card p{color:var(--muted);margin:0;font-size:15px}
+    .audience{background:#091c35;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.audience-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:55px;align-items:center}.checklist{display:grid;gap:13px;margin-top:24px}.check{display:flex;gap:12px;color:var(--muted)}.check span{color:var(--mint);font-weight:900}
+    .quote{padding:27px;border-left:3px solid var(--cyan);background:rgba(255,255,255,.04);border-radius:0 16px 16px 0;font-size:22px;font-weight:700;line-height:1.4}.quote small{display:block;margin-top:14px;font-size:13px;font-weight:500;color:var(--muted)}
+    .cta{background:radial-gradient(ellipse at 50% 100%,rgba(72,216,232,.16),transparent 55%)}.cta-box{text-align:center;padding:48px 24px;border:1px solid rgba(72,216,232,.25);border-radius:24px;background:linear-gradient(135deg,rgba(72,216,232,.07),rgba(163,244,213,.03))}
+    .cta-box .section-copy{margin:0 auto}.cta-box .actions{justify-content:center}
+    footer{border-top:1px solid var(--line);padding:24px 0;color:#91a6bf;font-size:13px}.footer-inner{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+    @media(max-width:780px){.navlinks{display:none}.hero{padding:48px 0}.hero-grid,.audience-grid{grid-template-columns:1fr;gap:26px}.visual{min-height:300px}.cards{grid-template-columns:1fr}.fc1{right:2%}.fc2{left:2%}section{padding:56px 0}h1{letter-spacing:-1.5px}}
+  </style>
+</head>
+<body>
+  <header class="wrap nav">
+    <a class="brand" href="#home" aria-label="CodeSphere Emirates home"><span class="logo">&lt;/&gt;</span><span>CodeSphere <span class="gradient">Emirates</span></span></a>
+    <nav class="navlinks" aria-label="Main navigation"><a href="#about">About</a><a href="#what-we-do">What we do</a><a href="#who-can-join">Who can join</a></nav>
+    <a class="btn" href="#join">Join the community ↗</a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap hero-grid">
+        <div>
+          <span class="eyebrow">A UAE tech community</span>
+          <h1>Together, we <span class="gradient">code.</span><br>Together, we grow.</h1>
+          <p class="lead">A community for aspiring developers, junior tech professionals, and jobseekers who want to learn, connect, build projects, and grow their careers across the UAE.</p>
+          <div class="actions"><a class="btn" href="#join">Find your people ↗</a><a class="btn secondary" href="#about">Discover our mission</a></div>
+          <p class="micro">Peer learning · Career guidance · Collaboration · Community-driven projects</p>
+        </div>
+        <div class="visual" aria-label="Abstract code sphere illustration">
+          <div class="orb"><div class="code-mark">&lt;/&gt;</div></div>
+          <div class="float-card fc1"><strong>Learn together</strong>Grow your skills with peers</div>
+          <div class="float-card fc2"><strong>Build your next step</strong>From learning to opportunities</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap">
+        <span class="section-tag">Why CodeSphere Emirates?</span>
+        <h2 class="section-title">Your tech journey shouldn't be a solo journey.</h2>
+        <p class="section-copy">Breaking into tech or finding your next role can feel overwhelming. CodeSphere Emirates brings people together to exchange knowledge, support one another, and make steady progress—one skill, one connection, and one project at a time.</p>
+      </div>
+    </section>
+
+    <section id="what-we-do" style="padding-top:0">
+      <div class="wrap">
+        <div class="cards">
+          <article class="card"><div class="card-icon">🧭</div><h3>Career guidance</h3><p>Practical tips for CVs, LinkedIn profiles, interviews, and navigating the UAE tech job market.</p></article>
+          <article class="card"><div class="card-icon">💻</div><h3>Peer learning</h3><p>Share what you're learning, ask questions, exchange resources, and keep each other motivated.</p></article>
+          <article class="card"><div class="card-icon">🤝</div><h3>Build together</h3><p>Explore collaboration, community-driven projects, and connections with fellow tech enthusiasts.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="audience" id="who-can-join">
+      <div class="wrap audience-grid">
+        <div>
+          <span class="section-tag">Your place in the community</span>
+          <h2 class="section-title">Curious about tech? You're welcome here.</h2>
+          <p class="section-copy">You don't need to know everything. Bring your curiosity, willingness to learn, and desire to grow.</p>
+          <div class="checklist">
+            <div class="check"><span>✓</span> Aspiring and self-taught developers</div>
+            <div class="check"><span>✓</span> Students, freshers, and career switchers</div>
+            <div class="check"><span>✓</span> Junior developers and early-career tech professionals</div>
+            <div class="check"><span>✓</span> UAE tech jobseekers and supportive mentors</div>
+          </div>
+        </div>
+        <div class="quote">“Together, we code. Together, we grow. Together, we rise.”<small>— The CodeSphere Emirates spirit</small></div>
+      </div>
+    </section>
+
+    <section class="cta" id="join">
+      <div class="wrap cta-box">
+        <span class="section-tag">Take the next step</span>
+        <h2 class="section-title">Let's grow the UAE tech community—together.</h2>
+        <p class="section-copy">Follow CodeSphere Emirates for practical career tips, learning resources, community updates, and ways to connect with fellow developers.</p>
+        <div class="actions">
+          <!-- Replace the # link below with your exact LinkedIn Page URL before publishing. -->
+          <a class="btn" href="#" id="linkedin-link">Connect on LinkedIn ↗</a>
+          <a class="btn secondary" href="mailto:hello@codesphere-emirates.example" id="email-link">Contact the community</a>
+        </div>
+        <p class="micro">No one has to grow alone. Start by connecting with us.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap footer-inner"><span>© <span id="year"></span> CodeSphere Emirates</span><span>Together, we code. Together, we grow.</span></div></footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    /*
+      BEFORE PUBLISHING:
+      1. Replace LINKEDIN_PAGE_URL with the exact URL of your CodeSphere Emirates LinkedIn page.
+      2. Replace CONTACT_EMAIL with an email address you actually use.
+    */
+    const LINKEDIN_PAGE_URL = "";
+    const CONTACT_EMAIL = "";
+    const linkedinButton = document.getElementById('linkedin-link');
+    const emailButton = document.getElementById('email-link');
+    if (LINKEDIN_PAGE_URL) linkedinButton.href = "https://www.linkedin.com/company/codesphere-emirates/home";
+    else linkedinButton.addEventListener('click', e => { e.preventDefault(); alert('Add your CodeSphere Emirates LinkedIn Page URL in index.html before publishing.'); });
+    if (CONTACT_EMAIL) emailButton.href = 'mailto:' + CONTACT_EMAIL;
+    else emailButton.addEventListener('click', e => { e.preventDefault(); alert('Add your contact email in index.html before publishing.'); });
+  </script>
+</body>
+</html>
